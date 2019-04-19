@@ -6,7 +6,12 @@
 
     <groupId>de.pragtics.demo</groupId>
     <artifactId>camunda-demos</artifactId>
+    <packaging>pom</packaging>
     <version>1.0.0</version>
+
+    <modules>
+        <module>camunda-spring-boot</module>
+    </modules>
 
 
 </project>
