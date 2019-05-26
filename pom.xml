@@ -11,6 +11,7 @@
 
     <modules>
         <module>camunda-spring-boot</module>
+        <module>model-deployment</module>
     </modules>
 
 
