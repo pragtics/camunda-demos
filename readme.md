@@ -7,3 +7,4 @@ Hier die Liste der Einträge:
 |Ordner|Beschreibung|Blog|
 |:---|:---|:---|
 |camunda-spring-boot|Camunda als Spring Boot Anwendung|https://pragtics.de/camunda-mit-spring-boot/|
+|model-deployment|Deployment eines ersten Prozesses|https://pragtics.de/der-erste-prozess/|
