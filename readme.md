@@ -8,3 +8,4 @@ Hier die Liste der Einträge:
 |:---|:---|:---|
 |camunda-spring-boot|Camunda als Spring Boot Anwendung|https://pragtics.de/camunda-mit-spring-boot/|
 |model-deployment|Deployment eines ersten Prozesses|https://pragtics.de/der-erste-prozess/|
+|service-tasks|Code ausführen mit Service Tasks|https://pragtics.de/code-mit-service-tasks/|
