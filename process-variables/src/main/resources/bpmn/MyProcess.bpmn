@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="1.11.3">
+  <bpmn:process id="my_process" name="MyProcess" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1" name="Start">
+      <bpmn:outgoing>SequenceFlow_1iytvrf</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="EndEvent_1d2dhdx" name="End">
+      <bpmn:incoming>SequenceFlow_08rpbib</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_1iytvrf" sourceRef="StartEvent_1" targetRef="doCalculation" />
+    <bpmn:sequenceFlow id="SequenceFlow_0he5fsh" sourceRef="doCalculation" targetRef="useCalculation" />
+    <bpmn:serviceTask id="doCalculation" name="Do calculation" camunda:class="processvariables.delegates.DoCalculationDelegate">
+      <bpmn:incoming>SequenceFlow_1iytvrf</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_0he5fsh</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="useCalculation" name="Use calculation" camunda:class="processvariables.delegates.UseCalculationDelegate">
+      <bpmn:incoming>SequenceFlow_0he5fsh</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_08rpbib</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="SequenceFlow_08rpbib" sourceRef="useCalculation" targetRef="EndEvent_1d2dhdx" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="my_process">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="173" y="102" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="179" y="138" width="24" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_1d2dhdx_di" bpmnElement="EndEvent_1d2dhdx">
+        <dc:Bounds x="605" y="102" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="613" y="141" width="20" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1iytvrf_di" bpmnElement="SequenceFlow_1iytvrf">
+        <di:waypoint xsi:type="dc:Point" x="209" y="120" />
+        <di:waypoint xsi:type="dc:Point" x="273" y="120" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="196" y="98.5" width="90" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0he5fsh_di" bpmnElement="SequenceFlow_0he5fsh">
+        <di:waypoint xsi:type="dc:Point" x="373" y="120" />
+        <di:waypoint xsi:type="dc:Point" x="442" y="120" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="362.5" y="98.5" width="90" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="ServiceTask_04fhwnt_di" bpmnElement="doCalculation">
+        <dc:Bounds x="273" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_0yfvrse_di" bpmnElement="useCalculation">
+        <dc:Bounds x="442" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_08rpbib_di" bpmnElement="SequenceFlow_08rpbib">
+        <di:waypoint xsi:type="dc:Point" x="542" y="120" />
+        <di:waypoint xsi:type="dc:Point" x="605" y="120" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="528.5" y="98.5" width="90" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
