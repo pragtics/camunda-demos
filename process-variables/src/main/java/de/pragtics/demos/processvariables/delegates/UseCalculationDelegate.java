@@ -1,4 +1,4 @@
-package processvariables.delegates;
+package de.pragtics.demos.processvariables.delegates;
 
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;

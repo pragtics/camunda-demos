@@ -9,11 +9,11 @@
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="SequenceFlow_1iytvrf" sourceRef="StartEvent_1" targetRef="doCalculation" />
     <bpmn:sequenceFlow id="SequenceFlow_0he5fsh" sourceRef="doCalculation" targetRef="useCalculation" />
-    <bpmn:serviceTask id="doCalculation" name="Do calculation" camunda:class="processvariables.delegates.DoCalculationDelegate">
+    <bpmn:serviceTask id="doCalculation" name="Do calculation" camunda:class="de.pragtics.demos.DoCalculationDelegate">
       <bpmn:incoming>SequenceFlow_1iytvrf</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_0he5fsh</bpmn:outgoing>
     </bpmn:serviceTask>
-    <bpmn:serviceTask id="useCalculation" name="Use calculation" camunda:class="processvariables.delegates.UseCalculationDelegate">
+    <bpmn:serviceTask id="useCalculation" name="Use calculation" camunda:class="de.pragtics.demos.UseCalculationDelegate">
       <bpmn:incoming>SequenceFlow_0he5fsh</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_08rpbib</bpmn:outgoing>
     </bpmn:serviceTask>

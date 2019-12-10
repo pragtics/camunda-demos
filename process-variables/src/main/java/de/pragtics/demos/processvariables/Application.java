@@ -1,4 +1,4 @@
-package processvariables;
+package de.pragtics.demos.processvariables;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
