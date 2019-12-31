@@ -10,3 +10,4 @@ Hier die Liste der Einträge:
 |model-deployment|Deployment eines ersten Prozesses|https://pragtics.de/der-erste-prozess/|
 |service-tasks|Code ausführen mit Service Tasks|https://pragtics.de/code-mit-service-tasks/|
 |process-variables|Datenhaltung mit Prozessvariablen|https://pragtics.de/datenhaltung-mit-prozessvariablen/|
+|parallel-gateway|Parallele Verarbeitung mit dem Parallel Gateway|https://pragtics.de/parallele-verarbeitung-mit-dem-parallel-gateway/|

@@ -14,6 +14,7 @@
         <module>model-deployment</module>
         <module>service-tasks</module>
         <module>process-variables</module>
+        <module>parallel-gateway</module>
     </modules>
 
 
