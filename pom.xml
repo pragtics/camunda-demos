@@ -15,6 +15,7 @@
         <module>service-tasks</module>
         <module>process-variables</module>
         <module>parallel-gateway</module>
+        <module>exclusive-gateway</module>
     </modules>
 
 
