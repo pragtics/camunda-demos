@@ -16,6 +16,7 @@
         <module>process-variables</module>
         <module>parallel-gateway</module>
         <module>exclusive-gateway</module>
+        <module>variable-scopes</module>
     </modules>
 
 
