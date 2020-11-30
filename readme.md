@@ -12,3 +12,4 @@ Hier die Liste der Einträge:
 |process-variables|Datenhaltung mit Prozessvariablen|https://pragtics.de/datenhaltung-mit-prozessvariablen/|
 |parallel-gateway|Parallele Verarbeitung mit dem Parallel Gateway|https://pragtics.de/parallele-verarbeitung-mit-dem-parallel-gateway/|
 |exclusive-gateway|Entscheidungen mit Exclusive Gateways modellieren|https://pragtics.de/entscheidungen-mit-exclusive-gateways-modellieren/|
+|variable-scopes|Datenhaltung in komplexen Prozessen|https://pragtics.de/datenhaltung-in-komplexen-prozessen/|
